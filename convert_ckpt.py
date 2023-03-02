@@ -37,7 +37,7 @@ def convert_ckpt():
     ck_dir = os.path.join("checkpoints", f"{config.MODEL.ARGS[0]['decoder_name']}_{config.MODEL.ARGS[0]['output_name']}_Net",
                           config.TAG)
     print(f"Processing {ck_dir}")
-    model_paths = [name for name in os.listdir(ck_dir) if '_best_' in name]
+    model_paths = [name for name in os.listdir(ck_dir) if '_saved_' in name]
     if len(model_paths) == 0:
         print("Not find best ckpt")
         return
@@ -47,7 +47,7 @@ def convert_ckpt():
     net = checkpoint['net']
     output_path = None
     if args.output_path is None:
-        output_path = os.path.join(ck_dir, 'best.pkl')
+        output_path = os.path.join(ck_dir, 'saved.pkl')
     else:
         output_path = args.output_path
     if output_path is None:
