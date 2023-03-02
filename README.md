@@ -1,2 +1,4 @@
 Pytorch implementation of "Disentangling Orthogonal Planes for Indoor Panoramic Room Layout Estimation with Cross-Scale Distortion Awareness" (CVPR'23) 
-# Coming soon!
+The project is reproducted based on LGT-Net and PanoFormer. 
+# Pretained Model 
+Download the model at this [link]() and put it in correct folder.
