@@ -1,1 +1,0 @@
-from .earcut import *
