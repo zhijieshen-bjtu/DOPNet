@@ -225,8 +225,8 @@ if __name__ == '__main__':
     # img_paths = sorted(glob.glob(args.img_glob))
 
     # inference()
-    #dataset = MP3DDataset(root_dir='/opt/data/private/360Layout/Datasets/mp3d', mode='test')
-    dataset = ZindDataset(root_dir='/opt/data/private/360Layout/Datasets/zind', mode='test')
+    dataset = MP3DDataset(root_dir='/opt/data/private/360Layout/Datasets/mp3d', mode='test')
+    #dataset = ZindDataset(root_dir='/opt/data/private/360Layout/Datasets/zind', mode='test')
     #dataset = PanoS2D3DMixDataset(root_dir='/opt/data/private/360Layout/Datasets/pano_s2d3d', mode='test', subset='pano')
     #dataset = PanoS2D3DMixDataset(root_dir='/opt/data/private/360Layout/Datasets/pano_s2d3d', mode='test', subset='s2d3d')
     # dataset = MP3DDataset(root_dir='/data/cylin/zzs/Datasets/mp3d', mode='test', split_list=[
