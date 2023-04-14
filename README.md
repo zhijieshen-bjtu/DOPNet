@@ -11,3 +11,13 @@ You can modify the inference.py to choose the datasets you want. (e.g.,
 ```
 python inference.py --cfg src/my_config/mp3d.yaml --output_dir src/output/mp3d
 ```
+If you find our work useful, please consider citing： 
+```
+@article{shen2023disentangling,
+  title={Disentangling Orthogonal Planes for Indoor Panoramic Room Layout Estimation with Cross-Scale Distortion Awareness},
+  author={Shen, Zhijie and Zheng, Zishuo and Lin, Chunyu and Nie, Lang and Liao, Kang and Zhao, Yao},
+  journal={arXiv preprint arXiv:2303.00971},
+  year={2023}
+}
+```
+
