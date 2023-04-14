@@ -2,7 +2,7 @@ Pytorch implementation of ["Disentangling Orthogonal Planes for Indoor Panoramic
 The project is reproducted based on LGT-Net and [PanoFormer](https://github.com/zhijieshen-bjtu/PanoFormer). 
 # Trained Models 
 Download the model at this [link](https://drive.google.com/drive/folders/1dOnUqtVB8Zfoume3oGjAbmFhMFTOin_I?usp=share_link) and put it in correct folder.
-# Quick start 
+# Quick Start 
 You can modify the inference.py to choose the datasets you want. (e.g.,   
     dataset = MP3DDataset(root_dir='/opt/data/private/360Layout/Datasets/mp3d', mode='test')  
     #dataset = ZindDataset(root_dir='/opt/data/private/360Layout/Datasets/zind', mode='test')  
