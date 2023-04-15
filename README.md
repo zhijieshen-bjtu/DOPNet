@@ -14,6 +14,31 @@ You can modify the inference.py to choose the datasets you want. (e.g.,
 ```
 python inference.py --cfg src/my_config/mp3d.yaml --output_dir src/output/mp3d
 ```
+If you want to test your own data, please modify main() in inference.py:
+```
+if __name__ == '__main__':
+    logger = get_logger()
+    args = parse_option()
+    config = get_config(args)
+
+    if 'cuda' in args.device and not torch.cuda.is_available():
+        logger.info(f'The {args.device} is not available, will use cpu ...')
+        config.defrost()
+        args.device = "cpu"
+        config.TRAIN.DEVICE = "cpu"
+        config.freeze()
+
+    model, _, _, _ = build_model(config, logger)
+    os.makedirs(args.output_dir, exist_ok=True)
+    img_paths = sorted(glob.glob(args.img_glob))
+
+    inference()
+```
+And run:
+```
+python inference.py --cfg src/my_config/mp3d.yaml --img_glob src/demo/demo.png --output_dir src/output/test --post_processing manhattan
+```
+
 If you find our work useful, please consider citing： 
 ```
 @article{shen2023disentangling,
