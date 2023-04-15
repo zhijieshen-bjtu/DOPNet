@@ -36,7 +36,7 @@ if __name__ == '__main__':
 ```
 And run:
 ```
-python inference.py --cfg src/my_config/mp3d.yaml --img_glob src/demo/demo.png --output_dir src/output/test --post_processing manhattan
+python inference.py --cfg src/my_config/mp3d.yaml --img_glob src/demo/{demo}.png --output_dir src/output/test --post_processing manhattan
 ```
 
 If you find our work useful, please consider citing： 
