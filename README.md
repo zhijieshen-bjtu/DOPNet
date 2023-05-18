@@ -41,11 +41,13 @@ python inference.py --cfg src/my_config/mp3d.yaml --img_glob src/demo/{demo}.png
 
 If you find our work useful, please consider citing： 
 ```
-@article{shen2023disentangling,
-  title={Disentangling Orthogonal Planes for Indoor Panoramic Room Layout Estimation with Cross-Scale Distortion Awareness},
-  author={Shen, Zhijie and Zheng, Zishuo and Lin, Chunyu and Nie, Lang and Liao, Kang and Zhao, Yao},
-  journal={arXiv preprint arXiv:2303.00971},
-  year={2023}
+@InProceedings{Shen_2023_CVPR,
+    author    = {Shen, Zhijie and Zheng, Zishuo and Lin, Chunyu and Nie, Lang and Liao, Kang and Zheng, Shuai and Zhao, Yao},
+    title     = {Disentangling Orthogonal Planes for Indoor Panoramic Room Layout Estimation With Cross-Scale Distortion Awareness},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {17337-17345}
 }
 ```
 
